@@ -1,6 +1,7 @@
 ﻿@page "/Registro"
 @using RegistroP.Controllers;
 @using RegistroP.Models;
+@inject PersonasController PersonasController ; 
 
 <div class="container text-center">
     <EditForm Model="Persona" OnValidSubmit="Guardar">
