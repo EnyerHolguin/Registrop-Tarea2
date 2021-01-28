@@ -7,6 +7,13 @@ namespace RegistroP.Controllers
 {
     public class PersonasController
     {
+        public Contexto contexto { get; set; }
+
+        public PersonasController(Contexto contexto)
+        {
+            this.contexto = contexto;
+        }
+
         public bool Insertar(Personas Persona)
         {
             bool paso = false;
